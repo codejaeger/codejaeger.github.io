@@ -17,6 +17,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libpixman-1-dev libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -34,10 +39,7 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: Install dependencies
-        run: |
-          yarn install --frozen-lockfile --network-timeout 300000 || \
-          yarn install --network-timeout 300000 || \
-          npm ci
+        run: yarn install --network-timeout 300000
 
       - name: Build website
         run: yarn build
