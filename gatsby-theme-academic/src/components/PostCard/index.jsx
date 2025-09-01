@@ -26,7 +26,7 @@ const PostCard = (props) => {
       cover,
     },
   } = node;
-  const fluid = cover ? cover.childImageSharp.fluid : null;
+  const fluid = cover && cover.childImageSharp ? cover.childImageSharp.fluid : null;
   const siteMetadata = useSiteMetadata();
   const url = Utils.resolvePageUrl(path);
   // const handleClick = (e) => {

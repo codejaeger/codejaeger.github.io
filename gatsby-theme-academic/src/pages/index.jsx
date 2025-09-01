@@ -3,8 +3,8 @@ import React from 'react';
 import AboutMe from '../components/PageFragments/HomePage/AboutMe';
 import Awards from '../components/PageFragments/HomePage/Awards';
 import Experience from '../components/PageFragments/HomePage/Experience';
-import SelectedResearch from '../components/PageFragments/HomePage/SelectedResearch';
-import SkillProgress from '../components/PageFragments/HomePage/SkillProgress';
+import News from '../components/PageFragments/HomePage/News';
+import UniversityGallery from '../components/PageFragments/HomePage/UniversityGallery';
 import SEO from '../components/Seo';
 
 export default () => (
@@ -18,7 +18,7 @@ export default () => (
     <AboutMe />
     <Experience />
     <Awards />
-    <SelectedResearch />
-    <SkillProgress/>
+    <News />
+    <UniversityGallery />
   </>
 );

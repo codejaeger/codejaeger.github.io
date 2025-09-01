@@ -33,7 +33,7 @@ const ResearchCard = (props) => {
       links,
     },
   } = node;
-  const fluid = cover ? cover.childImageSharp.fluid : null;
+  const fluid = cover && cover.childImageSharp ? cover.childImageSharp.fluid : null;
   // console.log(fluid);
 
   const siteMetadata = useSiteMetadata();

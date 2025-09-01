@@ -6,11 +6,11 @@ module.exports = {
   author: 'Debabrata Mandal',
   // authorAlternative: '',
   introduction: [
-    'I am first-year Ph.D. student in UNC-CH working with Praneeth Chakravarthula exploring deep-optics and computational image reconstruction. Specifically, I am looking at improving the achievable image quality with meta-lenses, one of the pioneering revolution under Fourier optics. Our research aims to stretch the limits imposed by wave-guided imaging pipelines to open up a diverse range of applications involving meta-lenses.',
-    'My primary areas of interest lie in the field of computer graphics and accelerated computing. I am also interested in understanding scene representation through surface and shape modeling. I am drawn towards skeletal-pose and shape estimation models which often intermix physics and kinematics with deep learning. In my spare time I play with vector graphics and 2D visualisations made through programming.',
-    'I also have been exposed to industry during my role as an AI engineer at ACL (Advanced Computing Labs, IIT Madras) at KLA-Tencor, Chennai. I spent there time designing some of the most efficient software infrastructures running inference workloads at the speed of light. As an open source enthusiast, I have received both scholarships and sponsoring to support my contributions.',
-    'Before that, I was assisting in the research for realistic hand shape modelling with Prof. Parag Chaudhuri and Prateek Kalshetti at ViGIL, IIT Bombay.',
-    '\n```markdown\nDoing research may be similar to MCMC sampling, you start at zero knowledge and after a \n burnout may get enlightened with an idea!\n```'
+    'I am third-year a Computer Science Ph.D. student at the University of North Carolina at Chapel Hill, advised by Prof. [Praneeth Chakravarthula](https://www.cs.unc.edu/~cpk/) at the [VCAIL Lab](https://www.visualcomputing.ai/). Currently, I am working on a mixture of computational optics, generative models and out-of-domain generalization, specifically exploring deep-optics and computational image reconstruction to improve achievable image quality with meta-lenses.',
+    'My research interests broadly encompass physics-inspired deep learning for learning nano-photonic metastructures, optimization for optics design, and real-time video diffusion models. I am actively working on designing hardware for metalenses including HDR, wide-field, broadband and real-time systems, while also exploring the integration of camera dynamics into generative models. In Summer 2025, I did a research internship at AMD working on interactive generative rendering.',
+    'Prior to my Ph.D., I gained valuable industry experience as an AI Engineer at [KLA-Tencor through ACL](https://ir.kla.com/news-events/press-releases/detail/413/kla-corporation-opens-new-artificial-intelligence-advanced) (Advanced Computing Labs, IIT Madras), where I worked under [Dr. Pradeep Ramachandran](https://www.linkedin.com/in/pramach2/?originalSubdomain=in) and collaborated with [Prof. Nitin Chandrachoodan](https://chandrachoodan.gitlab.io) on efficient GPU memory algorithms, designing software infrastructures for ML inference workloads in semiconductor inspection and defect detection systems. During my undergraduate years, I was fortunate to collaborate with [Prof. Parag Chaudhuri](https://www.cse.iitb.ac.in/~paragc/) at ViGIL, IIT Bombay, working on realistic hand shape modeling.',
+    'I have also been fortunate enough to have worked on diverse projects spanning computer graphics, reinforcement learning, and computational imaging - from developing intelligent game-playing agents using deep Q-learning at [Ubisoft](https://www.ubisoft.com/en-us) India to creating physics-based animations, 2D network graph visualization libraries in Julia, and implementing advanced image processing algorithms. As an open source enthusiast, I have contributed to [Google Summer of Code](https://summerofcode.withgoogle.com/) with [Boost.C++](https://www.boost.org), been an [LFX Mentee](https://lfx.linuxfoundation.org/tools/mentorship/) with [Open Horizon](https://lfedge.org/projects/open-horizon/), and contributed to [Javis.jl](https://juliaanimators.github.io/Javis.jl/stable/) for 2D drawing and visualization software. I have been recognized with [LiFT\'21 and LiFT\'22 scholarships](https://www.linuxfoundation.org/about/lift-scholarships) for advanced open source training, Bertelsmann Tech scholarship, and [Kaggle ML Research Spotlight](https://www.kaggle.com/discussions/general/370095).',
+    '\n```markdown\nDoing research may be similar to MCMC sampling, you start at zero knowledge and after a \n\n burnout may get enlightened with an idea!\n```'
   ],
   avatar: '/2me.jpg',
   professions: [
@@ -20,7 +20,7 @@ module.exports = {
   excerptMaxLength: 500,
   // birthday: '',
   location: 'North Carolina, USA',
-  email: 'debman@cs.unc.edu',
+  email: 'debman at cs dot unc dot edu',
   postsForArchivePage: 3,
   defaultLanguage: 'en',
   disqusScript: process.env.DISQUS_SCRIPT
@@ -63,9 +63,14 @@ module.exports = {
   googleAnalyticTrackingId: process.env.GA_TRACKING_ID || '',
   education: [
     {
-      date: 'Jul 2023 - Present',
+      date: 'Aug 2025 - Jul 2028',
       icon: 'graduation-cap',
       title: 'Ph.D in Computer Science',
+      location: 'University of North Carolina, Chapel Hill',
+    }, {
+      date: 'Jul 2023 - May 2025',
+      icon: 'graduation-cap',
+      title: 'M.S in Computer Science',
       location: 'University of North Carolina, Chapel Hill',
     }, {
       date: 'Aug 2022 - May 2023',
@@ -81,81 +86,112 @@ module.exports = {
     }],
   interests: [
     {
-      icon: 'cubes',
-      title: 'Distributed Systems',
+      icon: 'eye',
+      title: 'Computer Graphics',
     }, {
-      icon: 'layer-group',
-      title: 'Full Stack Development',
+      icon: 'microscope',
+      title: 'Computational Optics',
+    }, {
+      icon: 'brain',
+      title: 'Machine Learning',
+    }, {
+      icon: 'camera',
+      title: 'Computer Vision',
     }, {
       icon: ['fab', 'linux'],
-      // icon: 'linux',
       title: 'Open Source Community',
     }],
   experience: [
     {
-      title: 'Work',
+      title: 'Industry Experience',
       position: 'left',
       data: [
         {
-          date: 'Aug 2019 - Present',
-          title: 'Software Engineer',
-          location: 'Somewhere',
-          description: 'description',
+          date: 'Jun 2025 - Aug 2025',
+          title: 'Research Intern',
+          location: 'AMD, Santa Clara, CA',
+          description: '• Accelerated interactive generative rendering pipelines<br>• Optimized real-time performance for graphics applications',
+        },
+        {
+          date: 'Jun 2021 - Jul 2023',
+          title: 'AI Engineer',
+          location: 'KLA-Tencor, Chennai, India',
+          description: '• ML inference optimization for semiconductor inspection tools<br>• Efficient GPU memory algorithms with Dr. Pradeep Ramachandran<br>• Collaborated with Prof. Nitin Chandrachoodan on performance optimization',
+        },
+        {
+          date: 'Jun 2020 - Aug 2020',
+          title: 'Full Stack & DevOps Intern',
+          location: 'GoodHealth, India',
+          description: '• API development for Django-REST & Flask applications<br>• AWS Elastic Beanstalk deployment using Docker<br>• GitLab CI/CD pipeline automation',
+        },
+        {
+          date: 'May 2020 - Jun 2020',
+          title: 'Summer Intern',
+          location: 'Samsung India, India',
+          description: '• 100k+ server-client connections using Go websockets<br>• Performance benchmarking with containerized environments<br>• Low-resource server platform optimization',
+        },
+        {
+          date: 'May 2019 - Jul 2019',
+          title: 'Summer Intern',
+          location: 'Ubisoft India Studios, India',
+          description: '• Deep Q-Learning for optimal gameplay state-action mapping<br>• SSD framework with MobileNetv1 for object detection<br>• Game image feature extraction and analysis',
         },
       ],
     }, {
-      title: 'Teaching',
+      title: 'Teaching & Research',
       position: 'right',
       data: [
         {
-          date: 'Aug 2019',
-          title: 'Teaching Assistant of XXX',
-          location: 'Somewhere',
-        }, {
-          date: 'Aug 2018',
-          title: 'Teaching Assistant of XXX',
-          location: 'Somewhere',
-        }, {
-          date: 'Aug 2017',
-          title: 'Teaching Assistant of XXX',
-          location: 'Somewhere',
-        }, {
-          date: 'Aug 2018',
-          title: 'Teaching Assistant of XXX',
-          location: 'Somewhere',
-        }, {
-          date: 'Aug 2017',
-          title: 'Teaching Assistant of XXX',
-          location: 'Somewhere',
+          date: 'Aug 2024 - May 2025',
+          title: 'Graduate Teaching Assistant',
+          location: 'UNC Chapel Hill, NC',
+          description: '• TA for "Introduction to Data Science" (200 students)<br>• Weekly recitations and office hours<br>• Student mentoring and curriculum support',
+        },
+        {
+          date: 'Jul 2023 - May 2024',
+          title: 'Research Assistant',
+          location: 'UNC Chapel Hill, NC',
+          description: '• Computational optics and deep learning research<br>• VCAIL Lab under Prof. Praneeth Chakravarthula<br>• Meta-lens design and optimization',
+        },
+        {
+          date: 'Sep 2018 - Jul 2019',
+          title: 'Team Member',
+          location: 'IIT Bombay Mars Rover Team, Mumbai',
+          description: '• Autonomous navigation using ROS platform<br>• SLAM algorithms: G-mapping, hector-mapping, Cartographer-2D<br>• Kinectv2 sensor integration and testing',
         },
       ],
     }, {
-      title: 'Volunteer',
+      title: 'Open Source & Volunteer',
       position: 'left',
       data: [
         {
-          date: 'Aug 2019',
-          title: '[fxh](https://github.com/Reapor-Yurnero) home visit third time',
-          location: 'Somewhere',
-        }, {
-          date: 'Aug 2018',
-          title: '[fxh](https://github.com/Reapor-Yurnero) home visit second time',
-          location: 'Somewhere',
-        }, {
-          date: 'Aug 2017',
-          title: '[fxh](https://github.com/Reapor-Yurnero) home visit\n\n111',
-          location: 'Somewhere',
+          date: 'May 2020 - Aug 2020',
+          title: 'Google Summer of Code Student Developer',
+          location: 'Boost.C++, Remote',
+          description: '• Generic multidimensional histogram container for Boost.GIL<br>• Template meta-programming and variadic templates<br>• 3 contrast enhancement algorithms (MATLAB/OpenCV level)',
+        },
+        {
+          date: 'Mar 2021 - Jun 2021',
+          title: 'Open Horizon Mentee',
+          location: 'Linux Foundation, Remote',
+          description: '• LFX Mentorship program participant<br>• Open Horizon edge computing platform development<br>• Distributed systems and IoT contributions',
         },
       ],
     },
   ],
   awards: [
     {
-      date: 'Someday',
-      title: 'Some Award',
+      date: '2022',
+      title: 'LiFT\'22 Scholar',
     }, {
-      date: 'Someday',
-      title: 'Another Award',
+      date: '2021',
+      title: 'LiFT\'21 Scholar',
+    }, {
+      date: '2021',
+      title: 'Kaggle ML Research Spotlight',
+    }, {
+      date: '2020',
+      title: 'Bertelsmann Tech Scholarship',
     },
   ],
   tagColors: [

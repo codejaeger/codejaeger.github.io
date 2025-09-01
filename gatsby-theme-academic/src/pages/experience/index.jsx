@@ -42,21 +42,22 @@ const Experience = () => {
     <>
       <SEO
         title="Experience"
-        description="This page consists of various Tags on various technologies that I'll be using
-          to write blogs. You can check the blogs related to the tags by clicking on any of the tags below."
+        description="Professional experience including industry roles, research positions, teaching assistantships, and open source contributions."
         path="experience"
       />
-      <div className="marginTopTitle">
-        <h1 className="titleSeparate">Experience</h1>
+      <div className="experience-page">
+        <div className="marginTopTitle">
+          <h1 className="titleSeparate">Experience</h1>
+        </div>
+        <FlexboxGrid>
+          <FlexboxGrid.Item as={Col} xs={24} sm={24} md={12}>
+            {leftColumn.map(generateExperience)}
+          </FlexboxGrid.Item>
+          <FlexboxGrid.Item as={Col} xs={24} sm={24} md={12}>
+            {rightColumn.map(generateExperience)}
+          </FlexboxGrid.Item>
+        </FlexboxGrid>
       </div>
-      <FlexboxGrid>
-        <FlexboxGrid.Item as={Col} xs={24} sm={24} md={12}>
-          {leftColumn.map(generateExperience)}
-        </FlexboxGrid.Item>
-        <FlexboxGrid.Item as={Col} xs={24} sm={24} md={12}>
-          {rightColumn.map(generateExperience)}
-        </FlexboxGrid.Item>
-      </FlexboxGrid>
     </>
   );
 };

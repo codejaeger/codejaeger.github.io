@@ -594,6 +594,12 @@ exports.createSchemaCustomization = async (
         type: 'Int',
         resolve: (source) => source.priority || 0,
       },
+      cover: {
+        type: 'File',
+        extensions: {
+          fileByRelativePath: {},
+        },
+      },
     },
   });
 

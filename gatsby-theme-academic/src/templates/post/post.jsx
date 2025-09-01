@@ -45,7 +45,7 @@ const Post = ({ data }) => {
     .format('MMM Do YYYY');
   const postTime = Utils.formatDate(date);
 
-  const fluid = cover ? cover.childImageSharp.fluid : null;
+  const fluid = cover && cover.childImageSharp ? cover.childImageSharp.fluid : null;
 
   const siteMetadata = useSiteMetadata();
   const canonicalUrl = Utils.generateFullUrl(siteMetadata, path);
@@ -193,7 +193,7 @@ export const pageQuery = graphql`
       frontmatter {
         cover {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxWidth: 320, maxHeight: 180, fit: CONTAIN, background: "rgba(0,0,0,0)") {
               ...GatsbyImageSharpFluid_tracedSVG
             }
           }
