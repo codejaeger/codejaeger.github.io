@@ -44,13 +44,22 @@ jobs:
       - name: Build website
         run: yarn build
 
+      - name: List build output
+        run: |
+          echo "=== Root directory ==="
+          ls -la
+          echo "=== Example directory ==="
+          ls -la example/
+          echo "=== Looking for public directories ==="
+          find . -name "public" -type d
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './public'
+          path: './example/public'
 
       - name: Deploy to GitHub Pages
         id: deployment
