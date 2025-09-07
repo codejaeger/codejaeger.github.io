@@ -7,7 +7,7 @@ tags:
   - "burst-photography"
   - "computer-vision"
 date: 2025-02-22
-venue: "ICCV 2025 Conference Submission (Under Review)"
+venue: "WACV 2025 Conference Submission (Under Review)"
 authors:
   - name: "Debabrata Mandal"
     url: "https://codejaeger.github.io"

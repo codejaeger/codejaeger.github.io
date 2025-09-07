@@ -132,6 +132,7 @@ export default () => {
               <NavButton to="/experience/" onClick={toggleMenu} partiallyActive>Experience</NavButton>
               <NavButton to="/research/" onClick={toggleMenu} partiallyActive>Research</NavButton>
               <NavButton to="/posts/" onClick={toggleMenu} partiallyActive>Posts</NavButton>
+              <NavButton to="/cv/" onClick={toggleMenu}>CV</NavButton>
               <li className={style.navItem}>
                 <ThemeModeSwitch />
               </li>

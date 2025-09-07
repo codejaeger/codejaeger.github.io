@@ -129,6 +129,36 @@ body {
   }
 }
 
+// Dark mode specific styling for experience page
+.rs-theme-dark .experience-page {
+  .rs-panel {
+    &:nth-child(odd) .rs-panel-header {
+      background: linear-gradient(135deg, #0d1929 0%, #1f3a8a 100%);
+      
+      h3 {
+        color: #69b7ff !important;
+      }
+    }
+    
+    &:nth-child(even) .rs-panel-header {
+      background: linear-gradient(135deg, #162312 0%, #365314 100%);
+      
+      h3 {
+        color: #95de64 !important;
+      }
+    }
+  }
+  
+  .rs-panel-group .rs-panel {
+    h6 {
+      color: var(--rs-text-primary) !important;
+    }
+    
+    div:last-child {
+      color: var(--rs-text-secondary) !important;
+    }
+  }
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;

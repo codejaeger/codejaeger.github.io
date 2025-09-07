@@ -125,9 +125,7 @@ const ResearchCard = (props) => {
           ) : null}
         </FlexboxGrid.Item>
         <FlexboxGrid.Item as={Col} xs={24} sm={24} md={12} lg={8}>
-          <a href={Utils.generateFullUrl(siteMetadata, url)}>
-            {fluid ? <Img fluid={fluid} /> : <div className={style.postCardImg} />}
-          </a>
+          {fluid ? <Img fluid={fluid} /> : <div className={style.postCardImg} />}
         </FlexboxGrid.Item>
       </FlexboxGrid>
     </Panel>
