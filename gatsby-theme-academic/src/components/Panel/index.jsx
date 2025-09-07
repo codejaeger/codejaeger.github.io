@@ -63,6 +63,18 @@ const Panel = (props) => {
     });
   }
 
+  // Group research papers by year if it's research type
+  const groupedData = isResearch && data.allMdx ? 
+    _.groupBy(data.allMdx.edges.filter(val => {
+      // Apply tag filtering
+      for (const tag of selectedTags) {
+        if (!val.tags.has(tag)) return false;
+      }
+      return true;
+    }), val => new Date(val.node.frontmatter.date).getFullYear()) : {};
+
+  const years = Object.keys(groupedData).sort((a, b) => b - a); // Sort years descending (newest first)
+
   return (
     <>
       <FlexboxGrid className="spacing-grid">
@@ -78,28 +90,45 @@ const Panel = (props) => {
             </Row>
           </CodeBox>
         </FlexboxGrid.Item>
-        {
+        
+        {isResearch ? (
+          // Render research papers grouped by year
+          years.map(year => (
+            <React.Fragment key={year}>
+              <FlexboxGrid.Item as={Col} xs={24} sm={24} md={24} lg={24}>
+                <h2 style={{ 
+                  marginTop: '2rem', 
+                  marginBottom: '1rem', 
+                  fontSize: '1.5rem', 
+                  fontWeight: '600',
+                  borderBottom: '2px solid #304CFD',
+                  paddingBottom: '0.5rem'
+                }}>
+                  {year}
+                </h2>
+              </FlexboxGrid.Item>
+              {groupedData[year].map((val, key) => (
+                <FlexboxGrid.Item as={Col} key={`${year}-${key}`} xs={24} sm={24} md={24} lg={24}>
+                  <ResearchCard data={val} tagsMap={tagsMap} />
+                </FlexboxGrid.Item>
+              ))}
+            </React.Fragment>
+          ))
+        ) : (
+          // Render posts normally (non-research)
           data.allMdx && data.allMdx.edges.map((val, key) => {
             // eslint-disable-next-line no-restricted-syntax
             for (const tag of selectedTags) {
               if (!val.tags.has(tag)) return null;
             }
-            if (isResearch) {
-              return (
-                // eslint-disable-next-line react/no-array-index-key
-                <FlexboxGrid.Item as={Col} key={key} xs={24} sm={24} md={24} lg={24}>
-                  <ResearchCard data={val} tagsMap={tagsMap} />
-                </FlexboxGrid.Item>
-              );
-            }
             return (
-            // eslint-disable-next-line react/no-array-index-key
+              // eslint-disable-next-line react/no-array-index-key
               <FlexboxGrid.Item as={Col} key={key} xs={24} sm={24} md={24} lg={8}>
                 <PostCard data={val} tagsMap={tagsMap} />
               </FlexboxGrid.Item>
             );
           })
-        }
+        )}
       </FlexboxGrid>
     </>
   );
