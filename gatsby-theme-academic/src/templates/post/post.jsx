@@ -38,6 +38,7 @@ const Post = ({ data }) => {
       date,
       commit,
       type,
+      links,
     },
     tableOfContents,
   } = data.mdx;
@@ -139,6 +140,21 @@ const Post = ({ data }) => {
             </FlexboxGrid.Item>
           ) : null}
         </FlexboxGrid>
+        
+        {links && links.length > 0 && (
+          <div style={{ marginBottom: '1rem' }}>
+            <h4>Links</h4>
+            <ul>
+              {links.map((link, index) => (
+                <li key={index}>
+                  <a href={link.url} target="_blank" rel="noopener noreferrer">
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
 
         {state.locked
           ? (
