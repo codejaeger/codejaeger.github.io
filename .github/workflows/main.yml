@@ -5,6 +5,8 @@ name: Deploy to GitHub Pages (Disabled)
 
 on:
   # Disabled - using deploy.yml instead
+  # Manual trigger only
+  workflow_dispatch:
   # push:
   #   branches: [ master ]
   # pull_request:
