@@ -7,7 +7,7 @@ tags:
   - "diffusion-models"
   - "computational-optics"
 date: 2025-03-20
-venue: "arXiv preprint arXiv:2503.15868"
+venue: "WACV 2026 conference"
 authors:
   - name: "Debabrata Mandal"
     url: "https://codejaeger.github.io"

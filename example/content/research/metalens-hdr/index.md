@@ -7,12 +7,12 @@ tags:
   - "burst-photography"
   - "computer-vision"
 date: 2025-02-22
-venue: "WACV 2025 Conference Submission (Under Review)"
+venue: "WACV 2026 Conference"
 authors:
   - name: "Debabrata Mandal"
     url: "https://codejaeger.github.io"
-  - "Yujie Wang"
   - "Zhihan Peng"
+  - "Yujie Wang"
   - name: "Praneeth Chakravarthula"
     url: "https://www.cs.unc.edu/~cpk/"
 path: "research/metalens-hdr"
