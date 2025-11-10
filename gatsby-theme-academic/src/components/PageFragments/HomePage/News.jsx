@@ -5,6 +5,11 @@ import * as styles from './homePage.module.less';
 const News = () => {
   const newsItems = [
     {
+      date: 'Nov 2025',
+      title: '2 papers accepted in WACV 2026',
+      description: 'Our papers UniCoRN for all-in-one restoration and MetaHDR for metalens burst HDR restoration was accepted in WACV 2026 (Round 2).',
+    },
+    {
       date: 'Aug 2025',
       title: 'Started Ph.D. in Computer Science',
       description: 'Began Ph.D. program at UNC Chapel Hill, advised by Prof. Praneeth Chakravarthula at VCAIL Lab.',
