@@ -6,7 +6,7 @@ const News = () => {
   const newsItems = [
     {
       date: 'Nov 2025',
-      title: '2 papers accepted in WACV 2026',
+      title: '2 papers accepted in WACV 2026!',
       description: 'Our papers UniCoRN for all-in-one restoration and MetaHDR for metalens burst HDR restoration was accepted in WACV 2026 (Round 2).',
     },
     {
@@ -33,6 +33,11 @@ const News = () => {
       date: 'Jul 2023',
       title: 'Left AI Engineer Role at KLA-Tencor',
       description: 'Concluded role as AI Engineer at KLA-Tencor through Advanced Computing Labs, IIT Madras.',
+    },
+    {
+      date: 'Dec 2022',
+      title: '1 paper accepted in HiPC (2022)!',
+      description: 'Our paper on Split-knit convolutions got accepted into HiPC (2022).',
     },
     {
       date: 'Jun 2021',
