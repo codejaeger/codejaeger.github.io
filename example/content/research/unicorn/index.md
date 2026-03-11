@@ -1,5 +1,5 @@
 ---
-title: "UniCoRN: Latent Diffusion-based Unified Controllable Image Restoration Network (ORAL)"
+title: "UniCoRN: Latent Diffusion-based Unified Controllable Image Restoration Network"
 tags:
   - "computer-vision"
   - "deep-learning"
@@ -7,7 +7,7 @@ tags:
   - "diffusion-models"
   - "computational-optics"
 date: 2025-03-20
-venue: "WACV 2026 conference"
+venue: "WACV 2026 conference (ORAL)"
 authors:
   - name: "Debabrata Mandal"
     url: "https://codejaeger.github.io"
