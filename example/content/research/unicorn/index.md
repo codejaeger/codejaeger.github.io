@@ -1,5 +1,5 @@
 ---
-title: "UniCoRN: Latent Diffusion-based Unified Controllable Image Restoration Network"
+title: "UniCoRN: Latent Diffusion-based Unified Controllable Image Restoration Network (ORAL)"
 tags:
   - "computer-vision"
   - "deep-learning"
