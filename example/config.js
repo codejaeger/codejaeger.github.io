@@ -40,7 +40,7 @@ module.exports = {
       url: 'https://github.com/codejaeger',
       icon: ['fab', 'github'],
     }, {
-      url: 'https://scholar.google.com/citations?user=_0p4hC8zf7MC&hl=en',
+      url: 'https://scholar.google.com/citations?hl=en&authuser=1&user=DimYa_IAAAAJ',
       icon: ['fa', 'graduation-cap'],
     }, {
       url: 'https://www.linkedin.com/in/debabrata-mandal-0702a0167/',
