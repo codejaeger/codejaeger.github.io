@@ -21,7 +21,7 @@ selected: true
 cover: "./preview.png"
 links:
   - name: "project"
-    url: "https://codejaeger.github.io/unicorn-gh"
+    url: "https://unc-vcail.github.io/unicorn/"
   - name: "paper"
     url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DimYa_IAAAAJ&authuser=2&citation_for_view=DimYa_IAAAAJ:2osOgNQ5qMEC"
 priority: 10
