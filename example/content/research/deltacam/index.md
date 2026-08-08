@@ -18,7 +18,7 @@ selected: true
 cover: "./representative_image.jpg"
 links:
   - name: "project"
-    url: "#"
+    url: "https://unc-vcail.github.io/delta-cam/"
   - name: "paper"
     url: "https://arxiv.org/abs/2605.25266"
 priority: 10
