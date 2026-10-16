@@ -5,7 +5,7 @@ tags:
   - "video-generation"
   - "virtual-reality"
   - "deep-learning"
-date: 2026-09-30
+date: 2026-08-31
 venue: "Under Review"
 authors:
   - name: "Debabrata Mandal"
