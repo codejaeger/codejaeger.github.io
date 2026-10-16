@@ -6,7 +6,7 @@ tags:
   - "image-restoration"
   - "diffusion-models"
 date: 2026-03-05
-venue: "Under Review"
+venue: "Arxiv Preprint"
 authors:
   - name: "Debabrata Mandal"
     url: "https://codejaeger.github.io"

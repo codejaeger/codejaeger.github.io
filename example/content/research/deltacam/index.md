@@ -6,7 +6,7 @@ tags:
   - "deep-learning"
   - "video-generation"
 date: 2026-05-29
-venue: "Under Review"
+venue: "Arxiv Preprint"
 authors:
   - "Debabrata Mandal"
   - "Zhihan Peng"
