@@ -47,6 +47,11 @@ const ResearchCard = (props) => {
   // };
 
   const generateLink = (link) => {
+    if (link.url === 'coming-soon') {
+      return (
+        <span className={style.comingSoon}>{link.name}</span>
+      );
+    }
     let href = '#';
     if (link.url) {
       if (isRelativeUrl(link.url)) {

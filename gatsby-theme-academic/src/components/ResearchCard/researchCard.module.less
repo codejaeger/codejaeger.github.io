@@ -30,6 +30,22 @@
     //    }
     //}
 
+    .comingSoon {
+        display: inline-block;
+        padding: 2px 8px;
+        border: 1px solid #ff4d4f;
+        border-radius: 3px;
+        color: #ff4d4f;
+        font-size: 12px;
+        font-weight: 500;
+        animation: blink-badge 1.2s step-start infinite;
+    }
+
+    @keyframes blink-badge {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+    }
+
     .divider{
         border-left: 1.5px solid rgba(0, 0, 0, 0.2);
         top: 0.1em;
