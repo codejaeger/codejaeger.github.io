@@ -106,6 +106,12 @@ module.exports = {
       position: 'left',
       data: [
         {
+          date: 'Jun 2026 - Aug 2026',
+          title: 'PhD Research Intern',
+          location: 'Dolby Laboratories, San Jose, CA',
+          description: 'Investigated novel techniques for physically realistic stereoscopic video generation at the Sight Experiences Lab. Developed an epipolar-consistent 360° stereo video generation pipeline using direct preference optimization to reduce geometric artifacts in immersive headset content.',
+        },
+        {
           date: 'Jun 2025 - Aug 2025',
           title: 'Research Intern',
           location: 'AMD, Santa Clara, CA',
