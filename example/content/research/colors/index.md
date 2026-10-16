@@ -6,7 +6,7 @@ tags:
   - "continual-learning"
   - "image-restoration"
 date: 2026-10-01
-venue: "ICLR 2027"
+venue: "Under Review"
 authors:
   - name: "Debabrata Mandal"
     url: "https://codejaeger.github.io"

@@ -6,7 +6,7 @@ tags:
   - "virtual-reality"
   - "deep-learning"
 date: 2026-09-30
-venue: "IEEE VR 2027"
+venue: "Under Review"
 authors:
   - name: "Debabrata Mandal"
     url: "https://codejaeger.github.io"
