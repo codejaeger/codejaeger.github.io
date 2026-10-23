@@ -19,6 +19,7 @@ authors:
 path: "research/condimg"
 excerpt: "A conditional imaging framework that changes optical state per frame to preserve visual privacy while enabling authorized reconstruction."
 selected: true
+cover: "./preview.png"
 links:
   - name: "arxiv"
     url: "https://arxiv.org/abs/2610.28835"

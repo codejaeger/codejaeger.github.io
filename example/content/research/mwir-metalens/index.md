@@ -22,6 +22,7 @@ authors:
 path: "research/mwir-metalens"
 excerpt: "Broadband MWIR imaging (3–5 μm) using an all-silicon hyperboloid metalens paired with a data-efficient ML reconstruction trained on just four samples."
 selected: true
+cover: "./preview.png"
 links:
   - name: "arxiv"
     url: "https://arxiv.org/abs/2610.29841"
