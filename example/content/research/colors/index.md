@@ -10,6 +10,7 @@ venue: "Under Review"
 authors:
   - name: "Debabrata Mandal"
     url: "https://codejaeger.github.io"
+  - "Zhihan Peng"
   - name: "Praneeth Chakravarthula"
     url: "https://www.cs.unc.edu/~cpk/"
 path: "research/colors"
